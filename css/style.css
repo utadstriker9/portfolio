@@ -421,8 +421,7 @@ a:hover{
 	background-repeat: no-repeat;
 }
 .banner_bg{
-	background-color: #38ACEC;
-	background-image: url(/images/mid.png);
+	background:url(../images/mid.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
