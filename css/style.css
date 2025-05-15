@@ -950,6 +950,18 @@ a:hover{
     background: #fff;
     color: #6f64e7;
 }
+
+.modal-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.modal-entry a.btn {
+    margin-left: 1rem;
+    white-space: nowrap;
+}
+
 /* ----------------------------------------------------------------
     [ End Top-control ]
 -----------------------------------------------------------------*/
