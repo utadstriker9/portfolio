@@ -1,415 +1,134 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <!-- SITE TITLE -->
-    <title>Taqiyudin Muhammad Khalil Portfolio</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <link href="css/plugins.css" rel="stylesheet" />
-    <link href="css/responsive.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Taqiyudin Muhammad Khalil — Data Portfolio</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          sans: ['Inter', 'sans-serif'],
+          mono: ['JetBrains Mono', 'monospace'],
+        },
+      },
+    }
+  </script>
 </head>
 
-<body data-spy="scroll" data-offset="80">
-    <!-- START NAVBAR -->
-    <header class="header_area">
-        <div class="main_header navbar navbar-default menu-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-2 col-sm-2 col-xs-4">
-                        <div class="logo">
-                            <a href="index.html" class="navbar-brand">
-                            </a>
-                            <div class="mobile-nav"></div>
-                        </div>
-                    </div>
+<body class="bg-slate-950 text-slate-200 font-sans">
 
-                    <div class="col-md-10 col-sm-10 col-xs-8">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                                <span class="fa fa-navicon"></span>
-                            </button>
-                        </div>
+<!-- ================= HERO ================= -->
+<section class="min-h-screen flex items-center justify-center px-6">
+  <div class="max-w-3xl text-center">
+    <p class="font-mono text-sm text-emerald-400 mb-4">
+      Hello, I’m
+    </p>
+    <h1 class="text-4xl md:text-6xl font-bold mb-6">
+      Taqiyudin Muhammad Khalil
+    </h1>
+    <p class="text-lg md:text-xl text-slate-400 mb-8">
+      Mathematics Graduate · Data Enthusiast · Analytics & Engineering
+    </p>
 
-                        <nav id="navbar" class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#projects">Projects</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-            <!--- END CONTAINER -->
-        </div>
-    </header>
-    <!-- END NAVBAR -->
+    <div class="flex justify-center gap-6 text-xl">
+      <a href="https://www.linkedin.com/in/taqiyudinmkhalil/" class="hover:text-emerald-400">LinkedIn</a>
+      <a href="https://github.com/utadstriker9" class="hover:text-emerald-400">GitHub</a>
+      <a href="https://www.instagram.com/tqydnmkhalil/" class="hover:text-emerald-400">Instagram</a>
+    </div>
+  </div>
+</section>
 
-    <!-- START BANNER-SHOW -->
-    <section id="home" class="main_banner banner_bg">
-        <div class="display_table">
-            <div class="display_table_cell">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="banner_content text-center">
-                                <span class="sm_title">Hallo, Welcome to My Portfolio!</span>
-                                <h1 class="cd-headline clip">
-                                    <span class="fw_300">I'm</span>
-                                    <span class="cd-words-wrapper">
-                                        <b class="is-visible fw_800">Taqiyudin Muhammad Khalil</b>
-                                        <b class="fw_800">Bachelor Mathematics</b>
-                                        <b class="fw_800">Data Enthusiast</b>
-                                    </span>
-                                </h1>
-                                <ul class="banner_social_link">
-                                    <li><a href="https://www.instagram.com/tqydnmkhalil/"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/in/taqiyudinmkhalil/"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="https://github.com/utadstriker9"><i class="fab fa-github"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="mouse_scroll">
-            <a href="#about" class="smoothScroll">
-                <div class="mouse">
-                    <i class="fa fa-angle-double-down"></i>
-                </div>
-            </a>
-        </div>
-    </section>
-    <!-- END BANNER-SHOW -->
+<!-- ================= ABOUT ================= -->
+<section id="about" class="py-24 px-6 bg-slate-900">
+  <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-12 items-center">
+    
+    <img src="images/foto3x4.png"
+         alt="Taqiyudin Muhammad Khalil"
+         class="rounded-xl border border-slate-800 shadow-lg" />
 
-    <!-- START ABOUT -->
-    <section id="about" class="section_padding">
-        <div class="container">
-            <div class="single_about">
-                <div class="row">
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="about_image">
-                            <img src="images/foto3x4.png" alt="about-image" />
-                        </div>
-                    </div>
-                    <div class="col-md-8 col-sm-8 col-xs-12">
-                        <div class="about_content_area">
-                            <h4><span>Taqiyudin Muhammad Khalil</span></h4>
-                            <p>
-                                As a Data Expert with a Bachelor's degree in Mathematics and over 4 year of experience, 
-                                I am proficient in Python (NLP, ML, DL, TS), R, SQL (BigQuery, PostgreSQL, MySQL, Oracle),
-                                Visualization Tools (Tableau, Metabase, Preset, Looker, PowerBI, Grafana), ETL Tool (DBT, Airflow, Mage AI),
-                                CRM Tools (CleverTap, HubSpot, Insider, Mixpanel, NSQ), Google Analytics, Cloud Services (AWS, GCP, Alibaba, Azure).
-                                I seek opportunities in Data Analyst, Data Science and Data Engineer to contribute to data-driven initiatives.
-                            </p>
-                            <div class="about_details">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="ct_about">
-                                            <span> Name </span> : Taqiyudin Muhammad Khalil
-                                        </div>
-                                    </div>
+    <div class="md:col-span-2">
+      <h2 class="text-3xl font-semibold mb-6">About Me</h2>
 
-                                    <div class="col-md-12">
-                                        <div class="ct_about">
-                                            <span> Address </span>
-                                            : Bekasi, Indonesia
-                                        </div>
-                                    </div>
+      <p class="text-slate-400 leading-relaxed mb-6">
+        I am a data professional with a Bachelor’s degree in Mathematics and
+        over <span class="text-slate-200 font-medium">4 years of experience</span>
+        working across analytics, machine learning, dashboards, and data engineering.
+      </p>
 
-                                    <div class="col-md-12">
-                                        <div class="ct_about">
-                                            <span> Phone Number </span>
-                                            : +6285173118981
-                                        </div>
-                                    </div>
+      <p class="text-slate-400 leading-relaxed">
+        I work daily with Python, SQL, BI tools, and cloud platforms to turn
+        raw data into reliable insights and production-ready pipelines.
+      </p>
 
-                                    <div class="col-md-12">
-                                        <div class="ct_about">
-                                            <span> Email </span>
-                                            : taqiyudin.mk@gmail.com
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- END ABOUT -->
+      <div class="mt-8 grid grid-cols-2 gap-4 text-sm font-mono text-slate-400">
+        <span>📍 Bekasi, Indonesia</span>
+        <span>📧 taqiyudin.mk@gmail.com</span>
+        <span>📞 +62 851-7311-8981</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- START PORTFOLIO -->
-    <section id="projects" class="section_padding">
-        <div class="section_heading text-center">
-            <h2>My Projects</h2>
-            <p>Click the 'read more' button on each image for details some projects that I have completed or are in progress</p>
-        </div>
-        <div class="work_filter text-center wow fadeInDown">
-            <ul>
-                <li class="active" data-filter="*">All</li>
-                <li data-filter=".analytics">Analytics Projects</li>
-                <li data-filter=".dashboard">Dasboard Projects</li>
-                <li data-filter=".others">Others</li>
-            </ul>
-        </div>
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="py-24 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-4 text-center">Projects</h2>
+    <p class="text-center text-slate-400 mb-12">
+      Selected analytics, machine learning, dashboard, and SQL work
+    </p>
 
-        <div class="work_content_area">
-            <div class="col-md-3 col-sm-6 col-xs-12 element-item analytics">
-                <div class="item-img">
-                    <img src="images/Artboard 1.png" alt="" />
-                    <div class="item-img-overlay">
-                        <div class="overlay-info full-width text-center">
-                            <h5>Python</h5>
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                <p>Read More</p>
-                            </button>
-                        </div>
-                    
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="vertical-alignment-helper">
-                        <div class="modal-dialog vertical-align-center" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <h5 class="modal-title" id="exampleModalLabel">Python</h5>
-                            </div>
-                            <div class="modal-body">
-                                <p class="modal-entry">
-                                    <span>Classification Text</span>
-                                    <a onclick="window.open('https://github.com/utadstriker9/classification-text')" role="button" class="btn btn-secondary btn-sm popover-test" title="Click Me!">View Details</a>
-                                </p>
-                                <hr>
-                                <p class="modal-entry">
-                                    <span>Term Weighting using TF-IDF</span>
-                                    <a onclick="window.open('https://github.com/utadstriker9/pembobotan-TF-IDF')" role="button" class="btn btn-secondary btn-sm popover-test" title="Click Me!">View Details</a>
-                                </p>
-                                <hr>
-                                <p class="modal-entry">
-                                    <span>Sentiment Analysist in Twitter</span>
-                                    <a onclick="window.open('https://github.com/utadstriker9/sentiment-analysis-twitter')" role="button" class="btn btn-secondary btn-sm popover-test" title="Click Me!">View Details</a>
-                                </p>
-                                <hr>
-                                <p class="modal-entry">
-                                    <span>Named Entity Recognition</span>
-                                    <a onclick="window.open('https://github.com/utadstriker9/ner_indonesia')" role="button" class="btn btn-secondary btn-sm popover-test" title="Click Me!">View Details</a>
-                                </p>
-                                <hr>
-                                <p class="modal-entry">
-                                    <span>Image Classification using CNN</span>
-                                    <a onclick="window.open('https://github.com/utadstriker9/image_classification_cnn')" role="button" class="btn btn-secondary btn-sm popover-test" title="Click Me!">View Details</a>
-                                </p>
-                                <hr>
-                                <p class="modal-entry">
-                                    <span>Sankey Diagram</span>
-                                    <a onclick="window.open('https://github.com/utadstriker9/sankeydiagram')" role="button" class="btn btn-secondary btn-sm popover-test" title="Click Me!">View Details</a>
-                                </p>
-                                <hr>
-                                <p class="modal-entry">
-                                    <span>Time Series Forecasting</span>
-                                    <a onclick="window.open('https://github.com/utadstriker9/time-series-forecasting')" role="button" class="btn btn-secondary btn-sm popover-test" title="Click Me!">View Details</a>
-                                </p>
-                                <hr>
-                                <p class="modal-entry">
-                                    <span>Credit Scoring</span>
-                                    <a onclick="window.open('https://github.com/utadstriker9/credit_scoring')" role="button" class="btn btn-secondary btn-sm popover-test" title="Click Me!">View Details</a>
-                                </p>
-                                <hr>
-                                <p class="modal-entry">
-                                    <span>Speech Recognition</span>
-                                    <a onclick="window.open('https://github.com/utadstriker9/speech_recognition')" role="button" class="btn btn-secondary btn-sm popover-test" title="Click Me!">View Details</a>
-                                </p>
-                                <hr>
-                                <p class="modal-entry">
-                                    <span>Indonesian GPT Model</span>
-                                    <a onclick="window.open('https://github.com/utadstriker9/gptmodel')" role="button" class="btn btn-secondary btn-sm popover-test" title="Click Me!">View Details</a>
-                                </p>
-                                <hr>
-                                <p class="modal-entry">
-                                    <span>Docker Deploy</span>
-                                    <a onclick="window.open('https://github.com/utadstriker9/Docker-Deploy')" role="button" class="btn btn-secondary btn-sm popover-test" title="Click Me!">View Details</a>
-                                </p>
-                            </div>
-                            <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                        </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="col-md-3 col-sm-6 col-xs-12 element-item dashboard">
-                <div class="item-img">
-                    <img src="images/Artboard 2.png" alt="" />
-                    <div class="item-img-overlay">
-                        <div class="overlay-info full-width text-center">
-                            <h5>Tableau</h5>
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
-                                <p>Read More</p>
-                            </button>
-                        </div>
-                    
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Tableau</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            </div>
-                            <div class="modal-body">
-                                <p class="modal-entry">
-                                    <span>Final Project Ruangguru CAMP (Sales Department)</span>
-                                    <a onclick="window.open('https://public.tableau.com/app/profile/taqiyudinmkhalil/viz/FP196Sales/Dashboard')" role="button" class="btn btn-secondary btn-sm popover-test" title="Click Me!">View Details</a>
-                                </p>
-                                <hr>
-                                <p class="modal-entry">
-                                    <span>Sankey Diagram Profit Performances</span>
-                                    <a onclick="window.open('https://public.tableau.com/views/SankeyDiagramProfitPerformance/Dashboard?:language=en-US&:display_count=n&:origin=viz_share_link')" role="button" class="btn btn-secondary btn-sm popover-test" title="Click Me!">View Details</a>
-                                </p>
-                            </div>
-                            <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="grid md:grid-cols-3 gap-8">
 
-            <div class="col-md-3 col-sm-6 col-xs-12 element-item dashboard">
-                <div class="item-img">
-                    <img src="images/Artboard 4.png" alt="" />
-                    <div class="item-img-overlay">
-                        <div class="overlay-info full-width text-center">
-                            <h5>Looker</h5>
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
-                                <p>Read More</p>
-                            </button>
-                        </div>
-                    
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Looker</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            </div>
-                            <div class="modal-body">
-                                <p class="modal-entry">
-                                    <span>Rakamin VIX Visualization</span>
-                                    <a onclick="window.open('https://lookerstudio.google.com/reporting/26594111-42d9-4ca1-b48f-6959b961e182')" role="button" class="btn btn-secondary btn-sm popover-test" title="Click Me!">View Details</a>
-                                </p>
-                            </div>
-                            <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-           <div class="col-md-3 col-sm-6 col-xs-12 element-item others">
-                <div class="item-img">
-                    <img src="images/Artboard 3.png" alt="" />
-                    <div class="item-img-overlay">
-                        <div class="overlay-info full-width text-center">
-                            <h5>SQL</h5>
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal4">
-                                <p>Read More</p>
-                            </button>
-                        </div>
-                    
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">SQL</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            </div>
-                            <div class="modal-body">
-                               <p class="modal-entry">
-                                    <span>Cohort Analysis</span>
-                                    <a onclick="window.open('https://github.com/utadstriker9/SQL/blob/main/cohort.sql')" role="button" class="btn btn-secondary btn-sm popover-test" title="Click Me!">View Details</a>
-                                </p>
-                                <hr>
-                                <p class="modal-entry">
-                                    <span>RFM Analysis</span>
-                                    <a onclick="window.open('https://github.com/utadstriker9/SQL/blob/main/rfm.sql')" role="button" class="btn btn-secondary btn-sm popover-test" title="Click Me!">View Details</a>
-                                </p>
-                            </div>
-                            <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-    </section>
-    <!-- END PORTFOLIO -->
+      <!-- CARD -->
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-emerald-400 transition">
+        <h3 class="font-semibold text-lg mb-2">Machine Learning & NLP</h3>
+        <p class="text-slate-400 text-sm mb-4">
+          Text classification, sentiment analysis, NER, CNN, time series.
+        </p>
+        <a href="https://github.com/utadstriker9"
+           class="font-mono text-sm text-emerald-400 hover:underline">
+          View on GitHub →
+        </a>
+      </div>
 
-    <!-- Latest jQuery -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/modernizr-2.8.3.min.js"></script>
-    <script src="js/jquery.nav.js"></script>
-    <script src="js/jquery.inview.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/animated-headline.js"></script>
-    <script src="js/particles.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/scrolltopcontrol.js"></script>
-    <script src="js/jquery.hoverdir.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script type="text/javascript">
-        $(function () {
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-emerald-400 transition">
+        <h3 class="font-semibold text-lg mb-2">Dashboards & BI</h3>
+        <p class="text-slate-400 text-sm mb-4">
+          Tableau, Looker Studio, Metabase, Grafana.
+        </p>
+        <a href="https://public.tableau.com/app/profile/taqiyudinmkhalil"
+           class="font-mono text-sm text-emerald-400 hover:underline">
+          View Dashboards →
+        </a>
+      </div>
 
-            $(' .box ').each(function () {
-                $(this).hoverdir({
-                    hoverDelay: 50,
-                    inverse: true
-                });
-            });
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-emerald-400 transition">
+        <h3 class="font-semibold text-lg mb-2">SQL & Analytics</h3>
+        <p class="text-slate-400 text-sm mb-4">
+          Cohort analysis, RFM, funnel analysis, performance metrics.
+        </p>
+        <a href="https://github.com/utadstriker9/SQL"
+           class="font-mono text-sm text-emerald-400 hover:underline">
+          Explore Queries →
+        </a>
+      </div>
 
-        });
-        $("[data-toggle=popover]").popover();
-    </script>
-    <script src="js/main.js"></script>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="py-12 text-center text-slate-500 text-sm">
+  © 2026 · Built with clarity, data, and intent
+</footer>
+
 </body>
-
 </html>
