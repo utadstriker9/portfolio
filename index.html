@@ -28,9 +28,7 @@
 <!-- ================= HERO ================= -->
 <section class="min-h-screen flex items-center justify-center px-6">
   <div class="max-w-3xl text-center">
-    <p class="font-mono text-sm text-emerald-400 mb-4">
-      Hello, I’m
-    </p>
+    <p class="font-mono text-sm text-emerald-400 mb-4">Hello, I’m</p>
     <h1 class="text-4xl md:text-6xl font-bold mb-6">
       Taqiyudin Muhammad Khalil
     </h1>
@@ -46,57 +44,21 @@
   </div>
 </section>
 
-<!-- ================= ABOUT ================= -->
-<section id="about" class="py-24 px-6 bg-slate-900">
-  <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-12 items-center">
-    
-    <img src="images/foto3x4.png"
-         alt="Taqiyudin Muhammad Khalil"
-         class="rounded-xl border border-slate-800 shadow-lg" />
-
-    <div class="md:col-span-2">
-      <h2 class="text-3xl font-semibold mb-6">About Me</h2>
-
-      <p class="text-slate-400 leading-relaxed mb-6">
-        I am a data professional with a Bachelor’s degree in Mathematics and
-        over <span class="text-slate-200 font-medium">4 years of experience</span>
-        working across analytics, machine learning, dashboards, and data engineering.
-      </p>
-
-      <p class="text-slate-400 leading-relaxed">
-        I work daily with Python, SQL, BI tools, and cloud platforms to turn
-        raw data into reliable insights and production-ready pipelines.
-      </p>
-
-      <div class="mt-8 grid grid-cols-2 gap-4 text-sm font-mono text-slate-400">
-        <span>📍 Bekasi, Indonesia</span>
-        <span>📧 taqiyudin.mk@gmail.com</span>
-        <span>📞 +62 851-7311-8981</span>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ================= PROJECTS ================= -->
 <section id="projects" class="py-24 px-6">
   <div class="max-w-6xl mx-auto">
-    <h2 class="text-3xl font-semibold mb-4 text-center">Projects</h2>
-    <p class="text-center text-slate-400 mb-12">
-      Selected analytics, machine learning, dashboard, and SQL work
-    </p>
+    <h2 class="text-3xl font-semibold mb-12 text-center">Projects</h2>
 
     <div class="grid md:grid-cols-3 gap-8">
 
-      <!-- CARD -->
       <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-emerald-400 transition">
         <h3 class="font-semibold text-lg mb-2">Machine Learning & NLP</h3>
         <p class="text-slate-400 text-sm mb-4">
           Text classification, sentiment analysis, NER, CNN, time series.
         </p>
-        <a href="https://github.com/utadstriker9"
-           class="font-mono text-sm text-emerald-400 hover:underline">
+        <button onclick="openModal('ml')" class="font-mono text-sm text-emerald-400 hover:underline">
           View on GitHub →
-        </a>
+        </button>
       </div>
 
       <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-emerald-400 transition">
@@ -104,31 +66,128 @@
         <p class="text-slate-400 text-sm mb-4">
           Tableau, Looker Studio, Metabase, Grafana.
         </p>
-        <a href="https://public.tableau.com/app/profile/taqiyudinmkhalil"
-           class="font-mono text-sm text-emerald-400 hover:underline">
+        <button onclick="openModal('dashboard')" class="font-mono text-sm text-emerald-400 hover:underline">
           View Dashboards →
-        </a>
+        </button>
       </div>
 
       <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-emerald-400 transition">
         <h3 class="font-semibold text-lg mb-2">SQL & Analytics</h3>
         <p class="text-slate-400 text-sm mb-4">
-          Cohort analysis, RFM, funnel analysis, performance metrics.
+          Cohort, RFM, funnel, performance analysis.
         </p>
-        <a href="https://github.com/utadstriker9/SQL"
-           class="font-mono text-sm text-emerald-400 hover:underline">
-          Explore Queries →
-        </a>
+        <button onclick="openModal('sql')" class="font-mono text-sm text-emerald-400 hover:underline">
+          View Queries →
+        </button>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- ================= FOOTER ================= -->
-<footer class="py-12 text-center text-slate-500 text-sm">
-  © 2026 · Built with clarity, data, and intent
-</footer>
+<!-- ================= MODAL ================= -->
+<div id="modal-backdrop"
+     class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50
+            transition-opacity duration-300 opacity-0">
+
+  <div id="modal-box"
+       class="bg-slate-900 border border-slate-800 rounded-xl max-w-xl w-full p-6
+              transform scale-95 opacity-0 transition-all duration-300 relative">
+
+    <button onclick="closeModal()"
+            class="absolute top-4 right-4 text-slate-400 hover:text-white">
+      ✕
+    </button>
+
+    <h3 id="modal-title" class="text-xl font-semibold mb-4"></h3>
+    <ul id="modal-content" class="space-y-3 text-sm"></ul>
+  </div>
+</div>
+
+<!-- ================= SCRIPT ================= -->
+<script>
+  const projects = {
+    ml: {
+      title: "Machine Learning & NLP Projects",
+      items: [
+        ["Text Classification", "https://github.com/utadstriker9/classification-text"],
+        ["TF-IDF Term Weighting", "https://github.com/utadstriker9/pembobotan-TF-IDF"],
+        ["Twitter Sentiment Analysis", "https://github.com/utadstriker9/sentiment-analysis-twitter"],
+        ["Named Entity Recognition (ID)", "https://github.com/utadstriker9/ner_indonesia"],
+        ["CNN Image Classification", "https://github.com/utadstriker9/image_classification_cnn"],
+        ["Sankey Diagram", "https://github.com/utadstriker9/sankeydiagram"],
+        ["Time Series Forecasting", "https://github.com/utadstriker9/time-series-forecasting"],
+        ["Credit Scoring", "https://github.com/utadstriker9/credit_scoring"],
+        ["Speech Recognition", "https://github.com/utadstriker9/speech_recognition"],
+        ["Indonesian GPT Model", "https://github.com/utadstriker9/gptmodel"],
+        ["Docker Deployment", "https://github.com/utadstriker9/Docker-Deploy"]
+      ]
+    },
+    dashboard: {
+      title: "Dashboard Projects",
+      items: [
+        ["Ruangguru Sales (Tableau)", "https://public.tableau.com/app/profile/taqiyudinmkhalil/viz/FP196Sales/Dashboard"],
+        ["Sankey Profit Performance", "https://public.tableau.com/views/SankeyDiagramProfitPerformance/Dashboard"],
+        ["Rakamin VIX (Looker)", "https://lookerstudio.google.com/reporting/26594111-42d9-4ca1-b48f-6959b961e182"]
+      ]
+    },
+    sql: {
+      title: "SQL & Analytics Projects",
+      items: [
+        ["Cohort Analysis", "https://github.com/utadstriker9/SQL/blob/main/cohort.sql"],
+        ["RFM Analysis", "https://github.com/utadstriker9/SQL/blob/main/rfm.sql"]
+      ]
+    }
+  };
+
+  const backdrop = document.getElementById("modal-backdrop");
+  const modalBox = document.getElementById("modal-box");
+  const title = document.getElementById("modal-title");
+  const content = document.getElementById("modal-content");
+
+  function openModal(type) {
+    title.textContent = projects[type].title;
+    content.innerHTML = "";
+
+    projects[type].items.forEach(([name, url]) => {
+      const li = document.createElement("li");
+      li.innerHTML = `
+        <a href="${url}" target="_blank"
+           class="flex justify-between items-center border border-slate-800 rounded-lg px-4 py-2 hover:border-emerald-400 transition">
+          <span>${name}</span>
+          <span class="font-mono text-emerald-400">↗</span>
+        </a>`;
+      content.appendChild(li);
+    });
+
+    backdrop.classList.remove("hidden");
+    setTimeout(() => {
+      backdrop.classList.add("opacity-100");
+      modalBox.classList.remove("scale-95", "opacity-0");
+    }, 10);
+
+    document.addEventListener("keydown", escHandler);
+  }
+
+  function closeModal() {
+    modalBox.classList.add("scale-95", "opacity-0");
+    backdrop.classList.remove("opacity-100");
+
+    setTimeout(() => {
+      backdrop.classList.add("hidden");
+    }, 300);
+
+    document.removeEventListener("keydown", escHandler);
+  }
+
+  function escHandler(e) {
+    if (e.key === "Escape") closeModal();
+  }
+
+  backdrop.addEventListener("click", e => {
+    if (e.target === backdrop) closeModal();
+  });
+</script>
 
 </body>
 </html>
